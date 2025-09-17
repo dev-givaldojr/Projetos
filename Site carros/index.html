@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxDrive</title>
+    <meta name="description" content="Galeria moderna de veículos de luxo." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="app" class="container">
+        <header>
+            <div class="brand">
+                <div class="logo">LX</div>
+                <div>
+                    <h1>LuxDrive</h1>
+                    <p>Galeria e venda de automóveis de luxo</p>
+                </div>
+            </div>
+
+            <nav>
+                <a href="#models">Modelos</a>
+                <a href="#about">Sobre</a>
+                <a class="cta" href="#contact">Fale Conosco</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-card">
+                <h2>Automóveis de luxo</h2>
+                <p>Explore nossa coleção de veículos de alto padrão. Estéticas encantadoras, Potências avassaladoras e modernidade</p>   
+                <div class="search" role="search">
+                    <input id="searchInput" placeholder="Buscar por marca, modelo, ano ou palavra chave..." />
+                    <button id="searchBtn">Buscar</button>
+                </div> 
+
+                <div class="highlight-vehicle">
+                    <span class="badge">Destaque</span>
+                <img src="fl_progressive,f_webp,q_70.webp" alt="Destaque" />
+             </div>
+            </div>
+
+            <aside>
+                <div class="hero-card">
+                    <h3>Contatos rápidos</h3>
+                    <p>Whatsapp, Instagram e Email ligados diretamente ao nosso time</p>
+                    <div style="display: flex;gap:10px;margin-top:12px">
+                        <a id="whBtn" class="contact-btn whatsapp" href="#" title="Whatsapp">WA</a>
+                        <a id="igBtn" class="contact-btn instagram" href="#" title="Instagram">IG</a>
+                        <a id="mailBtn" class="contact-btn mail" href="#" title="Email">@</a>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <main>
+            <section id="models" class="models">
+  <h3>Coleção LuxDrive</h3>
+  <p class="models-subtitle">Explore nossa linha exclusiva de veículos de luxo</p>
+
+  <div class="grid" id="cardGrid">
+  </div>
+</section>
+
+
+            <section id="about" class="about">
+  <div class="about-text">
+    <h3>Sobre a LuxDrive</h3>
+    <p>
+      A <strong>LuxDrive</strong> é referência no mercado de automóveis de luxo,
+      trazendo os modelos mais exclusivos e inovadores do mundo. 
+      Nosso objetivo é oferecer muito mais que veículos: 
+      proporcionamos <em>experiências</em> únicas, unindo
+      sofisticação, potência e tecnologia de ponta.
+    </p>
+    <p>
+      Trabalhamos com transparência, confiança e dedicação,
+      garantindo que cada cliente encontre o carro dos seus sonhos
+      com o atendimento mais moderno e personalizado do mercado.
+    </p>
+  </div>
+
+  <div class="about-img">
+    <img src="7910.webp" alt="Carro futurista LuxDrive">
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="contact-info">
+    <h3>Fale Conosco</h3>
+    <p>Entre em contato com nossa equipe para mais informações sobre veículos, orçamentos e condições exclusivas.</p>
+
+    <div class="contact-links">
+      <a href="#" id="contactWA" class="contact-btn whatsapp">WhatsApp</a>
+      <a href="#" id="contactIG" class="contact-btn instagram">Instagram</a>
+      <a href="mailto:contato@luxdrive.com" id="contactMail" class="contact-btn mail">Email</a>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu email" required>
+      <textarea placeholder="Sua mensagem..." rows="4" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </div>
+
+  <div class="contact-map">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15801.79896207075!2d-34.88062043758303!3d-8.055522225493208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18a2a565885f%3A0x802b0e52579b84b7!2sRecife%2C%20PE%2C%2050030-230!5e0!3m2!1spt-BR!2sbr!4v1758107639426!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+
+
+            <footer>
+                <div>
+                    <strong>LuxDrive</strong>
+                    <div style="font-size:13px;color:var(--muted)">© <span id="year"></span> - Todos os direitos Reservados </div>
+                </div>
+                <div style="text-align: right; color:var(--muted)">
+                    <div>Designer: Givaldo Junior</div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <div class="contact-floating" aria-hidden="false">
+        <a id="floatWA" class="contact-btn whatsapp" href="#" title="Whatsapp">WA</a>
+        <a id="igBtn" class="contact-btn instagram" href="#" title="Instagram">IG</a>
+        <a id="mailBtn" class="contact-btn mail" href="#" title="Email">@</a>
+    </div>
+
+    <div id="modal" class="modal" role="dialog" aria-modal="true">
+        <div class="panel">
+            <button class="close" id="closeModal">✕</button>
+            <div class="content">
+                <div>
+                <img id="modalImg" src="fl_progressive,f_webp,q_70.webp" alt="Veículo" />
+            </div>
+            <aside>
+                <h3 id="modalTitle">Lamborghini Urus</h3>
+                <p id="modalSubtitle">Lamborghini • Urus • 2024</p>
+                <div style="margin-top:12px;font-size:18px;color:var(--accent);font-weight:800" id="modalPrice">R$ 4.041.375,00</div>
+
+                <div class="specs" id="modalSpecs"></div>
+
+                <div style="margin-top:18px;display:flex;gap:10px">
+                    <a id="modalWA" class="contact-btn whatsapp">Whatsapp</a>
+                    <a id="modalIG" class="contact-btn instagram">Instagram</a>
+                    <a id="modalEmail" class="contact-btn mail">Enviar email</a>
+                </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
